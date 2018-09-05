@@ -23,7 +23,7 @@ $mdConvert = \Jormin\MDConvert\MDConvert::load();
 ```
 
 ### 转换Html
-
+> 转换结果为 zip 压缩包，包含 `html` 文件和 `css` 文件
 ```php
 /**
  * 转换Html
