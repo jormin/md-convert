@@ -37,7 +37,7 @@ class MDConvert{
      * @param null $saveName
      * @return array
      */
-    public static function toHtml($mdFile, $savePath, $saveName=null){
+    public static function toHtml($mdFile, $savePath=null, $saveName=null){
         if(!$mdFile || !file_exists($mdFile)){
             return self::error('源文件不能为空');
         }
@@ -63,7 +63,7 @@ class MDConvert{
      * @param null $saveName
      * @return array
      */
-    public static function toPDF($mdFile, $savePath, $saveName=null){
+    public static function toPDF($mdFile, $savePath=null, $saveName=null){
         if(!$mdFile || !file_exists($mdFile)){
             return self::error('源文件不能为空');
         }

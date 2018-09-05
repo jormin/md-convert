@@ -28,7 +28,7 @@ $ composer require jormin/md-convert -vvv
  * @param array $saveName 转换后文件名称，为空默认使用源文件名称
  * @return array
  */
-Jormin\MDConvert\MDConvert::toHtml($mdFile, $savePath, [$saveName=null]);
+Jormin\MDConvert\MDConvert::toHtml($mdFile, [$savePath, $saveName=null]);
 ```
 
 ### 转换PDF
@@ -42,7 +42,7 @@ Jormin\MDConvert\MDConvert::toHtml($mdFile, $savePath, [$saveName=null]);
  * @param array $saveName 转换后文件名称，为空默认使用源文件名称
  * @return array
  */
-Jormin\MDConvert\MDConvert::toPDF($mdFile, $savePath, [$saveName=null]);
+Jormin\MDConvert\MDConvert::toPDF($mdFile, [$savePath, $saveName=null]);
 ```
 
 ## 参考扩展
