@@ -49,7 +49,11 @@ class MDConvert{
      * @return array
      */
     public function toHtml($mdFile, $savePath=null, $saveName=null){
-        list($mdFile, $savePath, $saveName) = $this->beforeConvert($mdFile, $savePath, $saveName);
+        $array = $this->beforeConvert($mdFile, $savePath, $saveName);
+        if(isset($array['status'])){
+            return $array;
+        }
+        list($mdFile, $savePath, $saveName) = $array;
         $tmpPath = $savePath.DIRECTORY_SEPARATOR.$saveName;
         !file_exists($tmpPath) && mkdir($tmpPath);
         copy(dirname(__FILE__).'/template/style.css', $tmpPath.'/style.css');
@@ -77,7 +81,11 @@ class MDConvert{
      * @return array
      */
     public function toPDF($mdFile, $savePath=null, $saveName=null){
-        list($mdFile, $savePath, $saveName) = $this->beforeConvert($mdFile, $savePath, $saveName);
+        $array = $this->beforeConvert($mdFile, $savePath, $saveName);
+        if(isset($array['status'])){
+            return $array;
+        }
+        list($mdFile, $savePath, $saveName) = $array;
         $saveName .= '.pdf';
         $htmlContent = $this->getHtmlContent($mdFile, 'pdf');
         $saveFile = $savePath.DIRECTORY_SEPARATOR.$saveName;
