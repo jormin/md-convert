@@ -50,7 +50,7 @@ class MDConvert{
      */
     public function toHtml($mdFile, $savePath=null, $saveName=null){
         $array = $this->beforeConvert($mdFile, $savePath, $saveName);
-        if(isset($array['status'])){
+        if(isset($array['success'])){
             return $array;
         }
         list($mdFile, $savePath, $saveName) = $array;
@@ -82,7 +82,7 @@ class MDConvert{
      */
     public function toPDF($mdFile, $savePath=null, $saveName=null){
         $array = $this->beforeConvert($mdFile, $savePath, $saveName);
-        if(isset($array['status'])){
+        if(isset($array['success'])){
             return $array;
         }
         list($mdFile, $savePath, $saveName) = $array;
