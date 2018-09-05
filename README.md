@@ -33,7 +33,7 @@ $mdConvert = \Jormin\MDConvert\MDConvert::load();
  * @param array $saveName 转换后文件名称，为空默认使用源文件名称
  * @return array
  */
-$mdConvert->toHtml($mdFile, [$savePath, $saveName=null]);
+$mdConvert->toHtml($mdFile, [$savePath=null, $saveName=null]);
 ```
 
 ### 转换PDF
@@ -47,7 +47,7 @@ $mdConvert->toHtml($mdFile, [$savePath, $saveName=null]);
  * @param array $saveName 转换后文件名称，为空默认使用源文件名称
  * @return array
  */
-$mdConvert->toPDF($mdFile, [$savePath, $saveName=null]);
+$mdConvert->toPDF($mdFile, [$savePath=null, $saveName=null]);
 ```
 
 ## 参考扩展
