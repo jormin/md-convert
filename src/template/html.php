@@ -9,7 +9,11 @@
     <style>
         .content-html{
             width: 50%;
-            margin: 1em auto;
+            margin: 1em auto !important;
+            border: 1px solid #d3e0e9;
+            -webkit-box-shadow: 0px 1px 2px 0 rgba(101, 129, 156, 0.08);
+            box-shadow: 0px 1px 2px 0 rgba(101, 129, 156, 0.08);
+            border-radius: 0.28571429rem;
         }
     </style>
 </head>
