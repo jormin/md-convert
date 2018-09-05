@@ -1,0 +1,31 @@
+{
+    "name": "jormin/md-convert",
+    "type": "library",
+    "description": "Markdown 转 Html 或 PDF",
+    "keywords": [
+        "Jormin",
+        "Markdown",
+        "Html",
+        "PDF"
+    ],
+    "homepage": "https://github.com/jormin/md-convert",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jormin",
+            "email": "jorminxee@gmail.com",
+            "homepage": "https://blog.lerzen.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^5.6 || ^7.0",
+        "mpdf/mpdf": "^7.1",
+        "erusev/parsedown": "^1.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jormin\\MDConvert\\": "src"
+        }
+    }
+}
